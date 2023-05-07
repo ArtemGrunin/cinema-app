@@ -1,4 +1,4 @@
-_# Cinema-App
+# Cinema-App
 
 - [Description](#description)
 - [Features](#features)
