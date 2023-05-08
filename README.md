@@ -10,7 +10,7 @@
 
 ### Description
 Cinema-App is a RESTful web application designed for demonstration purposes.
-It provides a simulated ticket reservation system in a cinema. 
+It provides a simulated cinema ticket reservation system. 
 The application follows the principles of the REST architectural style, 
 ensuring a stateless communication between clients and the server. 
 Users can easily register and log in using their credentials, 
@@ -53,6 +53,7 @@ The project has the following package structure:
 ### How to Run and Test
 To run the Cinema-App project, follow these steps:
 
+- ✅ Download and install JDK 17 for your IDE.
 - ✅ Make sure you have Apache Tomcat and MySQL installed on your system.
 - ✅ Clone the project repository to your local machine.
 - ✅ Configure the database connection parameters in the `resources/db.properties` file.
@@ -76,32 +77,32 @@ You can also use Postman to send requests to the application's endpoints.
 Here are the available API endpoints for the Cinema-App:
 
 - **Authentication:**
-  - `POST: /register` - Register a new user.
+  - `POST: /register` - Register a new user. (Accessible to all)
 
 - **CinemaHall:**
-  - `POST: /cinema-halls` - Add a new cinema hall.
-  - `GET: /cinema-halls` - Display all cinema halls.
+  - `POST: /cinema-halls` - Add a new cinema hall. (Accessible to ADMIN)
+  - `GET: /cinema-halls` - Display all cinema halls. (Accessible to all)
 
 - **Movie:**
-  - `POST: /movies` - Add a new movie.
-  - `GET: /movies` - Display all movies.
+  - `POST: /movies` - Add a new movie. (Accessible to ADMIN)
+  - `GET: /movies` - Display all movies. (Accessible to all)
 
 - **MovieSession:**
-  - `POST: /movie-sessions` - Add a new movie session.
-  - `PUT: /movie-sessions/{id}` - Update a movie session with the specified ID.
-  - `DELETE: /movie-sessions/{id}` - Delete a movie session by ID.
-  - `GET: /movie-sessions/available` - Display all available movie sessions.
+  - `POST: /movie-sessions` - Add a new movie session. (Accessible to ADMIN)
+  - `PUT: /movie-sessions/{id}` - Update a movie session with the specified ID. (Accessible to ADMIN)
+  - `DELETE: /movie-sessions/{id}` - Delete a movie session by ID. (Accessible to ADMIN)
+  - `GET: /movie-sessions/available` - Display all available movie sessions. (Accessible to all)
 
 - **Order:**
-  - `GET: /orders` - Display all orders.
-  - `POST: /orders/complete` - Complete the current order.
+  - `GET: /orders` - Display all orders. (Accessible to all)
+  - `POST: /orders/complete` - Complete the current order. (Accessible to USER)
 
 - **ShoppingCart:**
-  - `GET: /shopping-carts/by-user` - Display the contents of the current user's shopping cart.
-  - `PUT: /shopping-carts/movie-sessions` - Add a movie session to the shopping cart.
+  - `GET: /shopping-carts/by-user` - Display the contents of the current user's shopping cart. (Accessible to USER)
+  - `PUT: /shopping-carts/movie-sessions` - Add a movie session to the shopping cart. (Accessible to USER)
 
 - **User:**
-  - `GET: /users/by-email` - Find a user by email.
+  - `GET: /users/by-email` - Find a user by email. (Accessible to ADMIN)
 
 ### Author
 Artem Grunin
