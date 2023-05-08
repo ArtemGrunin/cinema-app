@@ -94,7 +94,7 @@ Here are the available API endpoints for the Cinema-App:
   - `GET: /movie-sessions/available` - Display all available movie sessions. (Accessible to USER)
 
 - **Order:**
-  - `GET: /orders` - Display all orders. (Accessible to all)
+  - `GET: /orders` - Display all orders. (Accessible to USER)
   - `POST: /orders/complete` - Complete the current order. (Accessible to USER)
 
 - **ShoppingCart:**
@@ -106,3 +106,4 @@ Here are the available API endpoints for the Cinema-App:
 
 ### Author
 Artem Grunin
+[My LinkedIn](https://www.linkedin.com/in/artem-grunin/)
