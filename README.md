@@ -91,7 +91,7 @@ Here are the available API endpoints for the Cinema-App:
   - `POST: /movie-sessions` - Add a new movie session. (Accessible to ADMIN)
   - `PUT: /movie-sessions/{id}` - Update a movie session with the specified ID. (Accessible to ADMIN)
   - `DELETE: /movie-sessions/{id}` - Delete a movie session by ID. (Accessible to ADMIN)
-  - `GET: /movie-sessions/available` - Display all available movie sessions. (Accessible to all)
+  - `GET: /movie-sessions/available` - Display all available movie sessions. (Accessible to USER)
 
 - **Order:**
   - `GET: /orders` - Display all orders. (Accessible to all)
